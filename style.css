@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(204, 43%, 93%);
+    margin: 0;
+    
+}
+
+main {
+    align-content: center;
+    justify-content: center;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 350px 350px;
+    grid-template-rows: 240px 300px;
+    grid-template-areas: 
+    "a a"
+    "b c";
+    font-family: 'Karla', sans-serif;
+}
+
+.join, .monthly-sub, .why-us {
+    padding: 2.5rem;
+}
+
+.monthly-sub, .why-us {
+    padding-top: 1rem;
+}
+
+.monthly-sub, .why-us {
+    color: white;
+}
+
+.join {
+    background-color: white;
+    grid-area: a;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding-right: 5rem;
+    padding-top: 1.5rem;
+}
+
+.join h2 {
+    color: hsl(179, 62%, 43%);;
+    margin-bottom: 0;
+}
+
+.join h3 {
+    color: hsl(71, 73%, 54%);
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.gain {
+    margin-top: 0.8rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.join p {
+    opacity: 50%;
+    line-height: 2rem;
+    margin-top: 0;
+}
+
+.monthly-sub {
+    background-color: hsl(179, 62%, 43%);
+    grid-area: b;
+    border-bottom-left-radius: 10px;
+}
+
+.price-flex {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.price {
+    margin: 0;
+    font-size: 2.3rem;
+}
+
+.per-month {
+    margin: 0;
+    margin-left: 1rem;
+    font-weight: 400;
+    opacity: 50%;
+}
+
+
+.why-us {
+    background-color: hsl(179, 67%, 44%);
+    grid-area: c;
+    border-bottom-right-radius: 10px;
+    padding-right: 2rem;
+}
+
+.why-head {
+    margin-bottom: 1rem;
+}
+
+.why-us h3 {
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    opacity: 80%;
+    font-size: 1rem;
+}
+
+.button-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    margin-top: 1rem;
+    padding: 1rem;
+    color: white;
+    background-color: hsl(71, 73%, 54%);
+    border: 0;
+    border-radius: 5px;
+    font-family: 'Karla', sans-serif;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media (max-width: 750px) {
+    main {
+        margin: auto;
+        max-width: 500px;
+        grid-template-columns: 90%;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "d"
+        "e"
+        "f";
+    }
+
+    .join {
+        grid-area: d;
+        padding-right: 2rem;
+    }
+
+    .monthly-sub {
+        grid-area: e;
+        border-bottom-left-radius: 0;
+    }
+
+    .why-us {
+        grid-area: f;
+        border-bottom-right-radius: 0;
+    }
+}
