@@ -25,7 +25,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: (https://github.com/Ansly21/Single-price-Grid-Component)
-- Live Site URL: (https://your-live-site-url.com)
+- Live Site URL: (https://sine-price-grid.netlify.app/)
 
 ## My process
 
